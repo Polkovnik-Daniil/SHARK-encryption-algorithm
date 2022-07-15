@@ -1,0 +1,53 @@
+
+string encryptionText(byte key[], string text) {
+    ddword q;
+    q.w[0] = 0;
+    q.w[1] = 0;
+    string result = "";
+    shark* sk = new shark(key, 16);
+    int lengthText = text.length();
+    for(int i = 0; i < lengthText; i++) {
+        ddword p;
+        p.b[0] = text[i];
+        p.w[1] = 0;
+
+        ddword q = sk->encryption(p);
+        for(int j = 0; j < 8; j++) {
+            result += q.b[j];
+        }
+    }
+    cout << "Encryption text: " << result << endl;
+    return text;
+}
+
+string decryptionText(byte key[], string text) {
+    ddword q;
+    q.w[0] = 0;
+    q.w[1] = 0;
+    string result = "";
+    shark* sk = new shark(key, 16);
+    int lengthText = text.length();
+    for(int i = 0; i < lengthText; i ++) {
+        ddword p;
+        p.b[0] = text[i];
+        p.w[1] = 0;
+
+        ddword q = sk->encryption(p);
+
+    }
+    cout << "Decryption text: " << result << endl;
+    return text;
+}
+
+
+
+
+
+
+
+
+
+        //encrypttext = (char)p.w[1];
+        //cout << "W: " << encrypttext << endl;
+        //encrypttext = (char)p.b[0];
+        //cout << "B: " << encrypttext << endl;

@@ -1,0 +1,7 @@
+﻿  CP.cpp
+D:\cpp\CP-Crypto\C++\CP\CP\CP.cpp(29,2): warning C4091: typedef : пропускается слева от "ddword", когда ни одна переменная не объявлена
+D:\cpp\CP-Crypto\C++\CP\CP\CP.cpp(270,31): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+D:\cpp\CP-Crypto\C++\CP\CP\CP.cpp(314,25): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+D:\cpp\CP-Crypto\C++\CP\CP\CP.cpp(319,35): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\cpp\CP-Crypto\C++\CP\CP\CP.cpp(334,41): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  CP.vcxproj -> D:\cpp\CP-Crypto\C++\CP\x64\Debug\CP.exe
